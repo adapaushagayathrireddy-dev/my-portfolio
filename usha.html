@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gayathri | CSE Student</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #0f172a; /* dark blue */
+      color: #e5e7eb; /* white-ish */
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+    .card h2 {
+      color: #60a5fa;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #1d4ed8;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #020617;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    .toggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #e5e7eb;
+      color: #020617;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+    body.light {
+      background: #f8fafc;
+      color: #020617;
+    }
+    body.light .card {
+      background: #ffffff;
+    }
+    body.light footer {
+      background: #e5e7eb;
+      color: #020617;
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle" onclick="toggleMode()">🌙 / ☀️</button>
+
+<header>
+  <h1>Gayathri 👩‍💻</h1>
+  <p>2nd Year CSE Student | ANN & Python Enthusiast</p>
+</header>
+
+<section>
+
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      Hi! I am Gayathri, a 2nd year Computer Science Engineering student.
+      I enjoy learning Artificial Neural Networks, Python, and building small but meaningful projects.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python Programming</li>
+      <li>Artificial Neural Networks (ANN)</li>
+      <li>PyTorch & Jupyter Notebook</li>
+      <li>HTML, CSS & Basic JavaScript</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>ANN Project Demo</h2>
+    <p>
+      <strong>House Price Prediction using ANN</strong><br>
+      A simple regression-based ANN model built using PyTorch.
+      The model predicts house prices based on square footage.
+    </p>
+    <ul>
+      <li>Input: Square Footage</li>
+      <li>Hidden Layer: 32 Neurons</li>
+      <li>Output: Predicted Price</li>
+    </ul>
+    <p>
+      This project helped me understand data preparation, model design,
+      loss functions (MSE), and training loops.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Contact Me</h2>
+    <p>Email: <strong>gayathri.student@example.com</strong></p>
+    <p>GitHub: <strong>github.com/gayathri</strong></p>
+    <p>LinkedIn: <strong>linkedin.com/in/gayathri</strong></p>
+    <a class="btn" href="mailto:gayathri.student@example.com">Send Email</a>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Gayathri | Built with 💙 & Code</p>
+</footer>
+
+<script>
+  function toggleMode() {
+    document.body.classList.toggle('light');
+  }
+</script>
+
+</body>
+</html>
